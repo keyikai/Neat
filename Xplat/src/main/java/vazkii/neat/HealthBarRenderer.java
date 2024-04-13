@@ -292,7 +292,7 @@ public class HealthBarRenderer {
 					String percStr = (int) (100 * living.getHealth() / living.getMaxHealth()) + "%";
 					mc.font.drawInBatch(percStr, (int) (halfSize / healthValueTextScale) - mc.font.width(percStr) / 2.0F, h, white, false, poseStack.last().pose(), buffers, Font.DisplayMode.NORMAL, black, light);
 				}
-				if (NeatConfig.instance.enableDebugInfo() && mc.options.renderDebug) {
+				if (NeatConfig.instance.enableDebugInfo() && true) {
 					var id = BuiltInRegistries.ENTITY_TYPE.getKey(living.getType());
 					mc.font.drawInBatch("ID: \"" + id + "\"", 0, h + 16, white, false, poseStack.last().pose(), buffers, Font.DisplayMode.NORMAL, black, light);
 				}
